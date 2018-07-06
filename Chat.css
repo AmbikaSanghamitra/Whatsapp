@@ -1,0 +1,123 @@
+.nav-item:hover{
+    background-color: rgb(42, 94, 163);
+    transform: scale(1.2);
+}
+.padd{
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+
+}
+.centre{
+    text-align: center;
+}
+.vcentre{
+    display: flex;
+    align-items: center;
+}
+.dps{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.padd3{
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+/* Chat containers */
+.row {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+    float: right;
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 2vw;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 5vw;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 250, 240, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;    
+}
+#stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+body{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.msg-box{
+    width: 100%;
+    height: 100%;
+    border-color: rgba(153, 153, 153, 0);
+}
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width:409px){
+    .dps{
+        height: 50px;
+        width: 50px;
+    }
+    .h5{
+        font-size: 0.8rem;
+    }
+    .navbar-toggler-icon{
+        font-size: 75%;
+    }
+    .navrow{
+        width: 85%;
+    }
+}
+@media screen and (max-width:301px){
+    body{
+        padding-top: 135px;
+    }
+}

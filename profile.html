@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Responsive WhatsApp</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="profile.js"></script>
+</head>
+
+<body style="background-color: rgb(238, 232, 232)">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(0, 96, 109)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <h1>WhatsApp</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item padd3">
+                        <a class="nav-link" href="index.html">
+                            <h5>Chats
+                                <span class="badge badge-primary">3</span>
+                            </h5>
+                        </a>
+                    </li>
+                    <li class="nav-item padd3">
+                        <a class="nav-link disabled" href="#">
+                            <h5>Status</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item active padd3">
+                        <a class="nav-link" href="profile.html">
+                            <h5>Profile</h5>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <img src="ironman.jpg" id="profile" alt="Profile Picture unavailable" class="imgsize">
+    </center>
+    <center>
+        <label for="img_name" class="btn btn-primary">Edit Profile Picture</label>
+    </center>
+
+    <input type='file' id="img_name" name="img_name" accept=".jpg, .jpeg, .png" style="visibility: hidden;" onchange="readURL(this);">
+    <div class="container" style="background-color: rgb(255, 255, 255)">
+
+        <div class="row padd">
+            <div class="col-11">
+                <h5>Ambika Sanghamitra</h5>
+            </div>
+            <div class="col">
+                <i class="material-icons" style="font-size: 1.7rem">mode_edit</i>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p style="color: rgb(33, 78, 33); font-size: 1.1rem">About and phone number</p>
+        </div>
+        <hr>
+        <p class="padd" style="color: rgb(33, 78, 33); font-size: 1.1rem">Hey!! I am using WhatsApp</p>
+        <hr>
+        <p class="padd" style="color: rgb(33, 78, 33); font-size: 1.1rem">+91 1234567890</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
